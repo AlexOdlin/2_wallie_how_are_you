@@ -1,9 +1,11 @@
 language: python
 python:
   - "3.5"
-  - "pypy3
-install: 
-- pip install .
-- pip install -r requirements.txt
+  # PyPy versions
+  - "pypy3"
+# command to install dependencies
+install:
+  - pip install .
+  - pip install -r requirements.txt
 # command to run tests
 script: pytest
